@@ -43,10 +43,8 @@ get '/auth/:name/callback' do
   redirect '/'
 end
 
-["/sign_in/?", "/signin/?", "/log_in/?", "/login/?", "/sign_up/?", "/signup/?"].each do |path|
-  get path do
+get %r{/[/log|sign_?up|in/]} do
     redirect '/auth/twitter'
-  end
 end
 
 ["/sign_out/?", "/signout/?", "/log_out/?", "/logout/?"].each do |path|
