@@ -31,3 +31,8 @@ The file app.rb has a place for your CONSUMER_KEY and CONSUMER_SECRET. Just repl
 ## A Minor Note
 
 Note that **you cannot use shotgun to test your app**, as you'll need sessions to persist in order to stay logged in, and shotgun restarts the server on every request. Starting your app with 'ruby app.rb' should work with no problems.
+
+
+## Feedback Is Awesome
+
+I'd really love to hear any suggestions you have on how to improve this. On Twitter, I'm [@charliepark](https://twitter.com/charliepark/). By e-mail, I'm charlie@monotask.com.
