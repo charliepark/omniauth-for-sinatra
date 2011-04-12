@@ -43,10 +43,12 @@ get '/auth/:name/callback' do
   redirect '/'
 end
 
+# any of the following routes should work to sign the user in: /sign_up, /signup, /sign_in, /signin, /log_in, /login
 get %r{/[/log|sign_?up|in/]} do
   redirect '/auth/twitter'
 end
 
+# either /log_out, /logout, /sign_out, or /signout will end the session and log the user out
 get %r{/[/log|sign_?out/]} do
   session[:user_id] = nil
   redirect '/'
