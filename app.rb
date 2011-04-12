@@ -44,12 +44,10 @@ get '/auth/:name/callback' do
 end
 
 get %r{/[/log|sign_?up|in/]} do
-    redirect '/auth/twitter'
+  redirect '/auth/twitter'
 end
 
-["/sign_out/?", "/signout/?", "/log_out/?", "/logout/?"].each do |path|
-  get path do
-    session[:user_id] = nil
-    redirect '/'
-  end
+get %r{/[/log|sign_?out/]} do
+  session[:user_id] = nil
+  redirect '/'
 end
