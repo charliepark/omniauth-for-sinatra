@@ -1,4 +1,4 @@
-%w(rubygems oa-oauth dm-core dm-sqlite-adapter dm-migrations sinatra).each { |dependency| require dependency }
+%w(omniauth omniauth-twitter dm-core dm-sqlite-adapter dm-migrations sinatra).each { |dependency| require dependency }
 
 DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/database.db")
 
