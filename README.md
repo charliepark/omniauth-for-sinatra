@@ -45,4 +45,4 @@ Note that if you want to use shotgun or reloader while testing your app, then yo
 ## Feedback Is Awesome
 
 I'd really love to hear any suggestions you have on how to improve this. On Twitter,
-I'm [@charliepark](https://twitter.com/charliepark/). By e-mail, I'm charlie@monotask.com.
+I'm [@charliepark](https://twitter.com/charliepark/). By e-mail, I'm charlie@charliepark.org.
