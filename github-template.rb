@@ -24,9 +24,11 @@ DataMapper.auto_upgrade!
 #   Name: {whatever you want to call your app}
 #   URL: http://localhost:4567
 #   Callback URL: http://localhost:4567/auth/github/callback
-#     That Callback URL should match whatever URL you have below (mine is on line 59).
-#     If you use Pow or an alternate server, you'll probably use something other than
-#       "http://localhost:4567"
+#     That Callback URL should match whatever URL you have below (mine is on line 61).
+#       * If you start your server with "ruby {filename.rb}", your URL and Callback URL
+#         will have a port of :4567 (so: http://localhost:4567).
+#       * If you use 'rackup', you'll have a port of :9292.
+#       * If you use Pow, you won't have a port, you'll just use http://{appname}.dev
 #
 # Don't save your "client ID" and "client secret" values in a publicly-available file.
 use OmniAuth::Builder do
